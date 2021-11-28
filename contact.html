@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form {
+            margin-left: 35%;
+            margin-right: auto;
+        }
+        
+        label {
+            font-size: 28px;
+        }
+        
+        .input {
+            font-size: 22px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        
+        #psn {
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        button {
+            padding: 5px 10px 5px 10px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(195, 57, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-bottom: 30px;">
+        <ul class="nav">
+            <li class="li"><a href="home.html">Home</a></li>
+            <li class="li"><a href="konten.html">Konten</a></li>
+            <li class="li"><a href="about.html">About</a></li>
+            <li class="li" id="putih">Contact</li>
+        </ul>
+    </div>
+
+
+    <h1 style="text-align: center;">Contact Me</h1>
+    <form class="form" action="server.php" method="post">
+        <label for="nama">Nama</label><br>
+        <input class="input" type="text" name="nama" style="width: 410px;" id="nama" placeholder="Masukan email"><br>
+        <label for="Email">Email</label><br>
+        <input class="input" type="text" name="email" style="width: 410px;" id="Email" placeholder="Masukan email">
+        <br>
+        <label for="psn">Pesan</label><br>
+        <textarea name="pesan" id="psn" cols="50" placeholder="Masukan Pesan" rows="10"></textarea>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
